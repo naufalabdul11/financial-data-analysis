@@ -1,0 +1,60 @@
+VIF with every predictor:
+ carat           22.00
+depth            1.72
+table            1.58
+x               56.90
+y               20.47
+z               23.54
+cut_code         1.48
+color_code       1.12
+clarity_code     1.23
+dtype: float64 
+
+VIF after dropping x and y:
+ carat           11.74
+depth            1.37
+table            1.58
+z               11.70
+cut_code         1.48
+color_code       1.12
+clarity_code     1.21
+dtype: float64 
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.906
+Model:                            OLS   Adj. R-squared:                  0.906
+Method:                 Least Squares   F-statistic:                 7.401e+04
+Date:                Tue, 13 Oct 2026   Prob (F-statistic):               0.00
+Time:                        06:53:56   Log-Likelihood:            -4.6009e+05
+No. Observations:               53940   AIC:                         9.202e+05
+Df Residuals:                   53932   BIC:                         9.203e+05
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const        -1375.8969    381.007     -3.611      0.000   -2122.674    -629.120
+carat         9782.7827     38.130    256.562      0.000    9708.047    9857.518
+depth          -22.9246      4.303     -5.327      0.000     -31.359     -14.490
+table          -27.8155      2.965     -9.380      0.000     -33.628     -22.003
+z             -703.1349     25.567    -27.501      0.000    -753.247    -653.023
+cut_code       119.2981      5.752     20.739      0.000     108.023     130.573
+color_code     320.8786      3.281     97.792      0.000     314.447     327.310
+clarity_code   513.0453      3.523    145.614      0.000     506.140     519.951
+==============================================================================
+Omnibus:                    11760.071   Durbin-Watson:                   1.055
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           478792.787
+Skew:                           0.204   Prob(JB):                         0.00
+Kurtosis:                      17.590   Cond. No.                     6.11e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.11e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+S = 1225.053, R-sq = 90.57%, R-sq(adj) = 90.57%
+Kolmogorov-Smirnov on standardised residuals: p = 0
+Glejser test (heteroskedasticity): F = 2478.2, p = 0
+Durbin-Watson: 1.055

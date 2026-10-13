@@ -1,0 +1,37 @@
+      count    mean      std    min     25%     50%     75%      max
+2013   34.0  5539.5  10313.2  180.7   659.5  1847.8  3835.1  39937.3
+2014   34.0  5853.8  10989.0  199.4   726.0  1914.0  4099.4  43096.5
+2015   34.0  6008.2  11125.1  206.5   768.8  2054.3  4256.2  44071.4
+2017   34.0  6647.5  11638.2  180.6   858.4  2322.0  4819.7  50791.2
+2018   34.0  7029.8  12189.9  183.3   919.6  2480.4  5029.7  52878.9
+2019   34.0  7283.9  12591.2  264.6  1014.0  2677.1  5115.2  54480.3
+2020   34.0  7100.2  11890.1  261.8  1080.7  2432.5  4965.0  49542.2
+2021   34.0  7577.5  12554.4  184.5  1179.5  2981.8  5489.7  53318.0
+2022   34.0  8051.8  13196.1  192.1  1230.6  3094.4  5776.4  56226.1
+
+                 method  k  silhouette  pseudo-F
+  Hierarchical, single  2      0.7463   21.8352
+  Hierarchical, single  3      0.7835   67.4911
+Hierarchical, complete  2      0.8336  114.1438
+Hierarchical, complete  3      0.8108  202.7700
+ Hierarchical, average  2      0.8336  114.1438
+ Hierarchical, average  3      0.8108  202.7700
+    Hierarchical, ward  2      0.8444  159.8130
+    Hierarchical, ward  3      0.8108  202.7700
+               K-Means  3      0.8108  202.7700
+
+K-Means clusters (1 = lowest consumption):
+  Cluster 1: Aceh, Sumatera Utara, Sumatera Barat, Riau, Jambi, Sumatera Selatan, Bengkulu, Lampung, Kep. Bangka Belitung, Kep. Riau, Di Yogyakarta, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Kalimantan Barat, Kalimantan Tengah, Kalimantan Selatan, Kalimantan Timur, Kalimantan Utara, Sulawesi Utara, Sulawesi Tengah, Sulawesi Selatan, Sulawesi Tenggara, Gorontalo, Sulawesi Barat, Maluku, Maluku Utara, Papua Barat, Papua
+  Cluster 2: Jawa Tengah, Banten
+  Cluster 3: Dki Jakarta, Jawa Barat, Jawa Timur
+
+ANOVA by year (do the clusters differ?):
+  2013: F = 259.6, p = 4.4e-20
+  2014: F = 236.8, p = 1.7e-19
+  2015: F = 220.1, p = 4.8e-19
+  2017: F = 186.1, p = 5.4e-18
+  2018: F = 186.4, p = 5.3e-18
+  2019: F = 211.0, p = 8.8e-19
+  2020: F = 210.9, p = 8.9e-19
+  2021: F = 186.0, p = 5.4e-18
+  2022: F = 178.4, p = 9.8e-18
